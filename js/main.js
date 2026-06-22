@@ -1,5 +1,24 @@
 const navToggle = document.querySelector('.nav-toggle');
 const siteNav = document.querySelector('.site-nav');
+const logoLink = document.querySelector('.site-logo, .logo, .header-logo');
+
+
+if (logoLink) {
+  logoLink.addEventListener('click', (event) => {
+    event.preventDefault();
+    event.stopImmediatePropagation();
+
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+
+    if (siteNav && siteNav.classList.contains('is-open')) {
+      siteNav.classList.remove('is-open');
+      navToggle?.setAttribute('aria-expanded', 'false');
+    }
+  });
+}
 
 if (navToggle && siteNav) {
   navToggle.addEventListener('click', () => {

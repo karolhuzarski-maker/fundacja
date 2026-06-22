@@ -48,12 +48,14 @@ h3 { margin: 18px 0 10px; font-size: 1.14rem; }
 .four-cols { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .info-card, .mission-card, .collaboration-card, .contact-card { background: var(--color-card); border: 1px solid var(--color-border); border-radius: 20px; box-shadow: var(--shadow-soft); }
 .info-card { padding: 28px; transition: transform .22s ease, box-shadow .22s ease; }
+#programy .info-card, #dla-kogo .info-card { padding-top: 34px; }
 .info-card:hover { transform: translateY(-6px); box-shadow: 0 28px 70px rgba(49,52,39,.16); }
 .info-card img { width: 72px; height: 72px; object-fit: contain; display: block; }
+#programy .info-card img, #dla-kogo .info-card img { width: clamp(105px, 7vw, 120px); height: auto; object-fit: contain; margin-bottom: 22px; }
 .info-card p, .mission-card p, .collaboration-card p, .contact-card, .site-footer p { color: var(--color-muted); line-height: 1.65; }
-.mission-card { display: grid; grid-template-columns: 150px 1fr; align-items: center; gap: 36px; padding: clamp(32px, 5vw, 58px); }
-.mission-icon { width: 132px; height: 132px; border-radius: 32px; display: grid; place-items: center; background: var(--color-sand); }
-.mission-icon img { width: 92px; height: 92px; object-fit: contain; }
+.mission-card { display: grid; grid-template-columns: 160px 1fr; align-items: center; gap: 36px; padding: clamp(32px, 5vw, 58px); }
+.mission-icon { width: clamp(120px, 8vw, 140px); height: clamp(120px, 8vw, 140px); border-radius: 32px; display: grid; place-items: center; background: var(--color-sand); }
+.mission-icon img { width: clamp(120px, 8vw, 140px); height: auto; object-fit: contain; display: block; }
 .actions-section { background: #f1eadc; }
 .actions-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 48px; align-items: start; }
 .action-list { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 16px; }
@@ -72,6 +74,6 @@ h3 { margin: 18px 0 10px; font-size: 1.14rem; }
 .site-footer a { display: block; color: rgba(255,255,255,.75); margin: 8px 0; }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,.14); margin-top: 42px; padding-top: 22px; display: flex; justify-content: space-between; gap: 20px; }
 .footer-bottom div { display: flex; gap: 22px; }
-@media (max-width: 980px) { .site-header, .header-inner { min-height: 170px; } .brand img { height: clamp(150px, 17vw, 170px); } .site-nav { gap: clamp(28px, 3vw, 42px); font-size: clamp(18px, 2vw, 20px); } .hero-grid, .actions-grid, .contact-grid { grid-template-columns: 1fr; } .hero-copy { text-align: center; } .hero-lead, .hero-actions { justify-content: center; margin-left: auto; margin-right: auto; } .hero-image { margin: 0 auto; max-width: 620px; } .four-cols { grid-template-columns: repeat(2, minmax(0, 1fr)); } .footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 980px) { #programy .info-card img, #dla-kogo .info-card img { width: 96px; } .mission-icon, .mission-icon img { width: 108px; } .mission-icon { height: 108px; } .site-header, .header-inner { min-height: 170px; } .brand img { height: clamp(150px, 17vw, 170px); } .site-nav { gap: clamp(28px, 3vw, 42px); font-size: clamp(18px, 2vw, 20px); } .hero-grid, .actions-grid, .contact-grid { grid-template-columns: 1fr; } .hero-copy { text-align: center; } .hero-lead, .hero-actions { justify-content: center; margin-left: auto; margin-right: auto; } .hero-image { margin: 0 auto; max-width: 620px; } .four-cols { grid-template-columns: repeat(2, minmax(0, 1fr)); } .footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 860px) { .site-header, .header-inner { min-height: 120px; } .header-inner { padding-block: 0; } .brand img { height: clamp(95px, 24vw, 115px); } .nav-toggle { display: block; flex: 0 0 auto; } .site-nav { position: fixed; inset: 120px 16px auto 16px; display: none; flex-direction: column; align-items: stretch; gap: 0; padding: 14px; background: white; border: 1px solid var(--color-border); border-radius: 18px; box-shadow: var(--shadow-soft); white-space: normal; } .site-nav.is-open { display: flex; } .site-nav a { padding: 14px; } }
-@media (max-width: 760px) { .container { width: min(100% - 32px, 1200px); } .site-nav.is-open { display: flex; } .site-nav a { padding: 14px; } .hero { padding-top: 38px; } .four-cols, .action-list, .mission-card, .cta-card, .footer-grid { grid-template-columns: 1fr; } .mission-card { text-align: center; } .mission-icon { margin-inline: auto; } .cta-card { text-align: center; } .footer-bottom, .footer-bottom div { flex-direction: column; } }
+@media (max-width: 760px) { #programy .info-card img, #dla-kogo .info-card img { width: 84px; } .mission-icon, .mission-icon img { width: 92px; } .mission-icon { height: 92px; } .container { width: min(100% - 32px, 1200px); } .site-nav.is-open { display: flex; } .site-nav a { padding: 14px; } .hero { padding-top: 38px; } .four-cols, .action-list, .mission-card, .cta-card, .footer-grid { grid-template-columns: 1fr; } .mission-card { text-align: center; } .mission-icon { margin-inline: auto; } .cta-card { text-align: center; } .footer-bottom, .footer-bottom div { flex-direction: column; } }

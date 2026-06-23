@@ -5,6 +5,11 @@ const logoLink = document.querySelector('.site-logo, .logo, .header-logo');
 
 if (logoLink) {
   logoLink.addEventListener('click', (event) => {
+    const href = logoLink.getAttribute('href') || '';
+    const isSamePageTop = href === '#top' || href === '#';
+
+    if (!isSamePageTop) return;
+
     event.preventDefault();
     event.stopImmediatePropagation();
 

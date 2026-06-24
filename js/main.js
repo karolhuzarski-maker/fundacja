@@ -180,37 +180,37 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
 
 const bioTiles = [
   {
-    image: '01_paramedic.png',
+    image: '01_paramedic NEW.png',
     altPL: 'Ratownik medyczny',
     altTranslationKey: 'Ratownik medyczny',
   },
   {
-    image: '02_stop_the_bleed_instructor.png',
+    image: '02_stop_the_bleed_instructor NEW.png',
     altPL: 'Instruktor STOP THE BLEED®',
     altTranslationKey: 'Instruktor STOP THE BLEED®',
   },
   {
-    image: '03_combat_lifesaver_instructor.png',
+    image: '03_combat_lifesaver_instructor NEW.png',
     altPL: 'Instruktor Combat Lifesaver',
     altTranslationKey: 'Instruktor Combat Lifesaver',
   },
   {
-    image: '04_afghanistan_kandahar_airfield.png',
+    image: '04_afghanistan_kandahar_airfield NEW.png',
     altPL: 'Afganistan — Kandahar Airfield',
     altTranslationKey: 'Afganistan — Kandahar Airfield',
   },
   {
-    image: '05_ukraine_osce_mission.png',
+    image: '05_ukraine_osce_mission NEW.png',
     altPL: 'Ukraina — misja OBWE',
     altTranslationKey: 'Ukraina — misja OBWE',
   },
   {
-    image: '06_first_response.png',
+    image: '06_first_response NEW.png',
     altPL: 'Pierwsza reakcja',
     altTranslationKey: 'Pierwsza reakcja',
   },
   {
-    image: '07_civil_resilience.png',
+    image: '07_civil_resilience NEW.png',
     altPL: 'Odporność cywilna',
     altTranslationKey: 'Odporność cywilna',
   },

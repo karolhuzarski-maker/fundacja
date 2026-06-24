@@ -201,7 +201,7 @@ const bioTiles = [
     altTranslationKey: 'Afganistan — Kandahar Airfield',
   },
   {
-    image: '05_ukraine_osce_mission NEW.png',
+    image: 'OSCE FLAG.png',
     altPL: 'Ukraina — misja OBWE',
     altTranslationKey: 'Ukraina — misja OBWE',
   },

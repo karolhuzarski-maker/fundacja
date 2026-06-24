@@ -30,6 +30,7 @@ const translations = {
     'Ukraina — misja OBWE': 'Ukraine — OSCE mission',
     'Pierwsza reakcja': 'First response',
     'Odporność cywilna': 'Civil resilience',
+    'Korporacje i finanse': 'Corporate and finance',
     'Programy edukacyjne': 'Educational programs',
     'Nasze programy': 'Our programs',
     'Pierwsze 10 minut': 'The First 10 Minutes',
@@ -213,6 +214,11 @@ const bioTiles = [
     image: '07_civil_resilience NEW.png',
     altPL: 'Odporność cywilna',
     altTranslationKey: 'Odporność cywilna',
+  },
+  {
+    image: 'corporate and finance.png',
+    altPL: 'Korporacje i finanse',
+    altTranslationKey: 'Korporacje i finanse',
   },
 ];
 

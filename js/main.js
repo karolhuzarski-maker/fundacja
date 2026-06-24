@@ -185,6 +185,11 @@ function translateValue(value, lang) {
   return translations[lang]?.[value] || value;
 }
 
+function translateKey(key, fallback, lang) {
+  if (lang === 'pl') return fallback;
+  return translations[lang]?.[key] || translations[lang]?.[fallback] || fallback;
+}
+
 function setLanguage(lang) {
   const nextLang = supportedLanguages.includes(lang) ? lang : 'pl';
   document.documentElement.lang = nextLang;
@@ -206,6 +211,23 @@ function setLanguage(lang) {
     node.setAttribute('aria-label', translateValue(attrs['aria-label'], nextLang));
   });
 
+  document.querySelectorAll('[data-i18n-attr]').forEach((node) => {
+    if (!originalAttributes.has(node)) originalAttributes.set(node, {});
+    const attrs = originalAttributes.get(node);
+
+    node.dataset.i18nAttr.split(',').forEach((definition) => {
+      const [attribute, key] = definition.split(':').map((part) => part?.trim());
+      if (!attribute || !key) return;
+      if (!(attribute in attrs)) attrs[attribute] = node.getAttribute(attribute) || '';
+      node.setAttribute(attribute, translateKey(key, attrs[attribute], nextLang));
+    });
+  });
+
+  document.querySelectorAll('[data-i18n]').forEach((node) => {
+    if (!originalText.has(node)) originalText.set(node, node.textContent);
+    node.textContent = translateKey(node.dataset.i18n, originalText.get(node), nextLang);
+  });
+
   document.querySelectorAll('img[alt]').forEach((node) => {
     if (!node.getAttribute('alt')) return;
     if (!originalAttributes.has(node)) originalAttributes.set(node, {});
@@ -217,7 +239,7 @@ function setLanguage(lang) {
   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
     acceptNode(node) {
       if (!node.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
-      if (node.parentElement?.closest('script, style, .language-switcher')) return NodeFilter.FILTER_REJECT;
+      if (node.parentElement?.closest('script, style, .language-switcher, [data-i18n]')) return NodeFilter.FILTER_REJECT;
       return NodeFilter.FILTER_ACCEPT;
     },
   });

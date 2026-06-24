@@ -181,38 +181,38 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
 const bioTiles = [
   {
     image: '01_paramedic.png',
-    labelPL: 'Ratownik medyczny',
-    translationKey: 'Ratownik medyczny',
+    altPL: 'Ratownik medyczny',
+    altTranslationKey: 'Ratownik medyczny',
   },
   {
     image: '02_stop_the_bleed_instructor.png',
-    labelPL: 'Instruktor STOP THE BLEED®',
-    translationKey: 'Instruktor STOP THE BLEED®',
+    altPL: 'Instruktor STOP THE BLEED®',
+    altTranslationKey: 'Instruktor STOP THE BLEED®',
   },
   {
     image: '03_combat_lifesaver_instructor.png',
-    labelPL: 'Instruktor Combat Lifesaver',
-    translationKey: 'Instruktor Combat Lifesaver',
+    altPL: 'Instruktor Combat Lifesaver',
+    altTranslationKey: 'Instruktor Combat Lifesaver',
   },
   {
     image: '04_afghanistan_kandahar_airfield.png',
-    labelPL: 'Afganistan — Kandahar Airfield',
-    translationKey: 'Afganistan — Kandahar Airfield',
+    altPL: 'Afganistan — Kandahar Airfield',
+    altTranslationKey: 'Afganistan — Kandahar Airfield',
   },
   {
     image: '05_ukraine_osce_mission.png',
-    labelPL: 'Ukraina — misja OBWE',
-    translationKey: 'Ukraina — misja OBWE',
+    altPL: 'Ukraina — misja OBWE',
+    altTranslationKey: 'Ukraina — misja OBWE',
   },
   {
     image: '06_first_response.png',
-    labelPL: 'Pierwsza reakcja',
-    translationKey: 'Pierwsza reakcja',
+    altPL: 'Pierwsza reakcja',
+    altTranslationKey: 'Pierwsza reakcja',
   },
   {
     image: '07_civil_resilience.png',
-    labelPL: 'Odporność cywilna',
-    translationKey: 'Odporność cywilna',
+    altPL: 'Odporność cywilna',
+    altTranslationKey: 'Odporność cywilna',
   },
 ];
 
@@ -225,15 +225,12 @@ function renderBioTiles() {
 
       const image = document.createElement('img');
       image.src = tile.image;
-      image.alt = tile.labelPL;
+      image.alt = tile.altPL;
+      image.dataset.i18nAttr = `alt:${tile.altTranslationKey}`;
       image.loading = 'lazy';
       image.decoding = 'async';
 
-      const caption = document.createElement('figcaption');
-      caption.dataset.i18n = tile.translationKey;
-      caption.textContent = tile.labelPL;
-
-      card.append(image, caption);
+      card.append(image);
       container.append(card);
     });
   });

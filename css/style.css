@@ -69,7 +69,6 @@ h3 { margin: 18px 0 10px; font-size: 1.14rem; }
 .bio-tags { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-top: 30px; }
 .bio-tile { min-width: 0; margin: 0; padding: 8px; border-radius: 20px; background: rgba(255,253,248,.92); border: 1px solid rgba(123,135,82,.22); box-shadow: 0 16px 34px rgba(49,52,39,.10); overflow: hidden; }
 .bio-tile img { display: block; width: 100%; aspect-ratio: 4 / 3; height: auto; object-fit: cover; border-radius: 15px; background: var(--color-sand); }
-.bio-tile figcaption { display: flex; align-items: center; justify-content: center; min-height: 48px; padding: 10px 8px 4px; color: var(--color-olive-dark); font-size: .86rem; font-weight: 800; line-height: 1.25; text-align: center; }
 .actions-section { background: #f1eadc; }
 .actions-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 48px; align-items: start; }
 .action-list { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 16px; }
@@ -127,4 +126,4 @@ h3 { margin: 18px 0 10px; font-size: 1.14rem; }
 @media (max-width: 860px) { .language-switcher { align-self: flex-start; margin: 8px 14px 6px; } }
 
 @media (min-width: 761px) and (max-width: 1100px) { .bio-tags { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
-@media (max-width: 520px) { .bio-tags { grid-template-columns: 1fr; } .bio-tile figcaption { min-height: 42px; } }
+@media (max-width: 520px) { .bio-tags { grid-template-columns: 1fr; } }

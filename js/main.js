@@ -24,6 +24,8 @@ const translations = {
     'Fundację Odporności Cywilnej tworzy jako platformę nowoczesnej edukacji społecznej, łączącą ratownictwo, bezpieczeństwo, przygotowanie kryzysowe i odpowiedzialność lokalną.': 'He is building Fundacja Odporności Cywilnej as a platform for modern public education that connects emergency response, safety, crisis preparedness and local responsibility.',
     'Doświadczenie i obszary praktyki': 'Experience and areas of practice',
     'Ratownik medyczny': 'Paramedic',
+    'Instruktor STOP THE BLEED®': 'STOP THE BLEED® Instructor',
+    'Instruktor Combat Lifesaver': 'Combat Lifesaver Instructor',
     'Afganistan — Kandahar Airfield': 'Afghanistan — Kandahar Airfield',
     'Ukraina — misja OBWE': 'Ukraine — OSCE mission',
     'Pierwsza reakcja': 'First response',
@@ -175,6 +177,68 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
   });
 });
 
+
+const bioTiles = [
+  {
+    image: '01_paramedic.png',
+    labelPL: 'Ratownik medyczny',
+    translationKey: 'Ratownik medyczny',
+  },
+  {
+    image: '02_stop_the_bleed_instructor.png',
+    labelPL: 'Instruktor STOP THE BLEED®',
+    translationKey: 'Instruktor STOP THE BLEED®',
+  },
+  {
+    image: '03_combat_lifesaver_instructor.png',
+    labelPL: 'Instruktor Combat Lifesaver',
+    translationKey: 'Instruktor Combat Lifesaver',
+  },
+  {
+    image: '04_afghanistan_kandahar_airfield.png',
+    labelPL: 'Afganistan — Kandahar Airfield',
+    translationKey: 'Afganistan — Kandahar Airfield',
+  },
+  {
+    image: '05_ukraine_osce_mission.png',
+    labelPL: 'Ukraina — misja OBWE',
+    translationKey: 'Ukraina — misja OBWE',
+  },
+  {
+    image: '06_first_response.png',
+    labelPL: 'Pierwsza reakcja',
+    translationKey: 'Pierwsza reakcja',
+  },
+  {
+    image: '07_civil_resilience.png',
+    labelPL: 'Odporność cywilna',
+    translationKey: 'Odporność cywilna',
+  },
+];
+
+function renderBioTiles() {
+  document.querySelectorAll('[data-bio-tiles]').forEach((container) => {
+    container.innerHTML = '';
+    bioTiles.forEach((tile) => {
+      const card = document.createElement('figure');
+      card.className = 'bio-tile';
+
+      const image = document.createElement('img');
+      image.src = tile.image;
+      image.alt = tile.labelPL;
+      image.loading = 'lazy';
+      image.decoding = 'async';
+
+      const caption = document.createElement('figcaption');
+      caption.dataset.i18n = tile.translationKey;
+      caption.textContent = tile.labelPL;
+
+      card.append(image, caption);
+      container.append(card);
+    });
+  });
+}
+
 const LANGUAGE_STORAGE_KEY = 'foc-language';
 const supportedLanguages = ['pl', 'en'];
 const originalText = new WeakMap();
@@ -269,4 +333,5 @@ function initLanguageSwitcher() {
   setLanguage(localStorage.getItem(LANGUAGE_STORAGE_KEY) || 'pl');
 }
 
+renderBioTiles();
 initLanguageSwitcher();

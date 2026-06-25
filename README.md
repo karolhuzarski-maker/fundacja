@@ -26,7 +26,7 @@ Plik `.nojekyll` wyłącza przetwarzanie przez Jekylla.
 
 ## 3. Gdzie podmienić logo
 
-Logo używane w headerze i footerze jest obecnie wskazane w plikach HTML jako `logo_foc_home_1600w%20%20NEW%20MAIN.png` (plik źródłowy: `logo_foc_home_1600w  NEW MAIN.png`). Aby zmienić logo, podmień referencje `src`/`og:image` w odpowiednich plikach HTML.
+Logo używane w headerze i footerze jest obecnie wskazane w plikach HTML jako `final%20logo.jpeg` (plik źródłowy: `final logo.jpeg`). Aby zmienić logo, podmień referencje `src`/`og:image` w odpowiednich plikach HTML.
 
 ## 4. Gdzie podmienić grafikę hero
 

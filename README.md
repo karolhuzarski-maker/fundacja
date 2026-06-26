@@ -48,4 +48,4 @@ Ikony kart są wstawione jako zwykłe elementy `img` w `index.html`:
 
 ## 6. Gdzie zmienić dane kontaktowe
 
-Dane kontaktowe znajdują się w sekcji `Kontakt` oraz w stopce w pliku `index.html`. Wyszukaj `kontakt@odpornosccywilna.pl`, `+48 123 456 789` i `Ochojno, Małopolska`.
+Dane kontaktowe znajdują się w sekcji `Kontakt` oraz w stopce w pliku `index.html`. Wyszukaj `kontakt@odpornosc-cywilna.org`, `512 503 640` i `Ochojno, Małopolska`.

@@ -31,6 +31,7 @@ a { color: inherit; text-decoration: none; }
 .eyebrow { margin: 0 0 14px; color: var(--color-olive-dark); font-size: .78rem; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
 h1, h2, h3, p { overflow-wrap: anywhere; }
 h1 { margin: 0; font-size: clamp(54px, 5.4vw, 80px); line-height: .96; font-weight: 800; letter-spacing: -.045em; }
+html[lang="pl"] .hero-title-pl { line-height: 1.05; }
 h1 span, h2 span { color: var(--color-olive); }
 h2 { margin: 0; font-size: clamp(32px, 4vw, 52px); line-height: 1.1; letter-spacing: -.035em; }
 h3 { margin: 18px 0 10px; font-size: 1.14rem; }

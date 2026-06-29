@@ -37,9 +37,9 @@ Główna grafika hero to `graphic man right.png`. Jej ścieżka znajduje się w 
 Ikony kart są wstawione jako zwykłe elementy `img` w `index.html`:
 
 - `clock.png` — Pierwsze 10 minut
-- `blood.png` — Lokalne Punkty Kontroli Krwotoku
+- `ikona_drona_z_falami_sygnału.png` — Echo Drona
+- `zestaw_ratunkowy_w_minimalistycznym_stylu.png` — Black Box Odporności
 - `repsonder.png` — Cywilny First Responder
-- `peopel.png` — Odporność cywilna w praktyce
 - `target human.png` — Nasza misja
 - `humans.png` — Mieszkańcy
 - `eudction.png` — Szkoły

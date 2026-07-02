@@ -39,7 +39,7 @@ Ikony kart są wstawione jako zwykłe elementy `img` w `index.html`:
 - `clock.png` — Pierwsze 10 minut
 - `ikona_drona_z_falami_sygnału.png` — Echo Drona
 - `zestaw_ratunkowy_w_minimalistycznym_stylu.png` — Black Box Odporności
-- `repsonder.png` — Cywilny First Responder
+- `Medidrop72.png` — MediDrop 72 h
 - `target human.png` — Nasza misja
 - `humans.png` — Mieszkańcy
 - `eudction.png` — Szkoły

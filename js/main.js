@@ -40,8 +40,9 @@ const translations = {
     'Cywilna świadomość zagrożeń dronowych: schronienie, szczątki, zgłoszenie, informacja, panika oraz bezpieczna pomoc rannym.': 'Civilian awareness of drone-related threats: shelter, debris, reporting, information, panic and safe help for injured people.',
     'Black Box Odporności': 'Civil Resilience Black Box',
     'Praktyczne scenariusze kryzysowe: blackout, gotowość 72 h, komunikacja, punkt pomocy, sąsiedzi i pierwsza reakcja.': 'Practical crisis scenarios: blackout, 72-hour readiness, communication, help point, neighbours and first response.',
-    'MediDrop 72 h': 'MediDrop 72 h',
-    'Kontakt, łączność i ciągłość lekowa w sytuacji odcięcia: osoby przewlekle chore, seniorzy, OSP, apteka, gmina i lokalny punkt pomocy.': 'Contact, communication and continuity of critical medicines during temporary isolation: chronically ill residents, seniors, volunteer fire brigades, pharmacies, municipalities and local support points.',
+    'EchoDron SAR': 'EchoDron SAR',
+    'BSP i termowizja dla wsparcia poszukiwań, OSP i gotowości kryzysowej gmin. Pakiet obejmuje pokaz możliwości drona, szkolenie OSP, ćwiczenia tabletop, dokumentację wybranego miejsca oraz moduły Blackout 72, Pierwsze 10 Minut i MediDrop 72 h.': 'UAV and thermal imaging for search support, volunteer fire brigades and municipal crisis readiness. The package includes a drone capability demonstration, fire brigade training, tabletop exercises, selected-site documentation and Blackout 72, First 10 Minutes and MediDrop 72 h modules.',
+    'Zobacz pakiet dla gmin': 'View the municipal package',
     'program.medidrop.href': './en/programs/medidrop-72h/',
     'Adresaci działań': 'Who we work with',
     'Dla kogo': 'For whom',
@@ -308,7 +309,7 @@ function setLanguage(lang) {
     node.nodeValue = core ? `${leading}${translateValue(core, nextLang)}${trailing}` : source;
   });
 
-  document.querySelectorAll('.language-option').forEach((button) => {
+  document.querySelectorAll('.language-option[data-lang]').forEach((button) => {
     const isActive = button.dataset.lang === nextLang;
     button.classList.toggle('is-active', isActive);
     button.setAttribute('aria-pressed', String(isActive));
@@ -317,7 +318,7 @@ function setLanguage(lang) {
 }
 
 function initLanguageSwitcher() {
-  document.querySelectorAll('.language-option').forEach((button) => {
+  document.querySelectorAll('.language-option[data-lang]').forEach((button) => {
     button.addEventListener('click', () => setLanguage(button.dataset.lang));
   });
   setLanguage(localStorage.getItem(LANGUAGE_STORAGE_KEY) || 'pl');

@@ -132,3 +132,10 @@ h3 { margin: 18px 0 10px; font-size: 1.14rem; }
 
 @media (min-width: 761px) and (max-width: 1100px) { .bio-tags { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 @media (max-width: 520px) { .bio-tags { grid-template-columns: 1fr; } }
+.program-card { display: flex; flex-direction: column; align-items: flex-start; }
+.program-card p { flex: 1 1 auto; }
+.program-card .btn { margin-top: 12px; }
+.municipal-package-card { margin-top: 22px; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 22px; align-items: center; }
+.municipal-package-card h3 { margin-top: 0; }
+.municipal-package-card p { margin-bottom: 0; }
+@media (max-width: 760px) { .municipal-package-card { grid-template-columns: 1fr; } .municipal-package-card .btn { width: 100%; } }

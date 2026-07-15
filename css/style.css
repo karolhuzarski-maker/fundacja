@@ -77,7 +77,9 @@ h3 { margin: 18px 0 10px; font-size: 1.14rem; }
 .actions-section { background: #f1eadc; }
 .actions-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 48px; align-items: start; }
 .action-list { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 16px; }
-.action-list span { padding: 20px; background: rgba(255,255,255,.74); border: 1px solid var(--color-border); border-radius: 18px; font-weight: 800; }
+.action-list article { min-height: 100%; padding: 20px; background: rgba(255,255,255,.74); border: 1px solid var(--color-border); border-radius: 18px; }
+.action-list h3 { margin: 0 0 10px; font-size: 1rem; line-height: 1.35; font-weight: 800; }
+.action-list p { margin: 0; color: var(--color-muted); font-size: .94rem; line-height: 1.55; }
 .collaboration-section { position: relative; overflow: hidden; isolation: isolate; padding-inline: 0; }
 .wspolpraca-watermark { position: absolute; right: 40px; bottom: 20px; width: 420px; max-width: 45%; opacity: .14; z-index: 1; pointer-events: none; }
 .wspolpraca-content { position: relative; z-index: 2; }

@@ -55,7 +55,7 @@ h3 { margin: 18px 0 10px; font-size: 1.14rem; }
 #programy .info-card, #dla-kogo .info-card { padding-top: 34px; }
 .info-card:hover { transform: translateY(-6px); box-shadow: 0 28px 70px rgba(49,52,39,.16); }
 .info-card img { width: 72px; height: 72px; object-fit: contain; display: block; }
-#programy .info-card img, #dla-kogo .info-card img { width: clamp(76px, 7vw, 120px); height: auto; object-fit: contain; margin-bottom: 22px; }
+#programy .info-card img, #dla-kogo .info-card img { width: clamp(76px, 7vw, 120px); height: auto; object-fit: contain; margin-bottom: 22px; transform: scale(1.28); transform-origin: center top; }
 .info-card p, .mission-card p, .collaboration-card p, .site-footer p { color: var(--color-muted); line-height: 1.65; }
 .mission-section { position: relative; overflow: hidden; }
 .mission-card { display: grid; grid-template-columns: minmax(190px, .34fr) minmax(0, 1fr); align-items: start; gap: clamp(30px, 5vw, 58px); padding: clamp(32px, 5vw, 58px); overflow: hidden; position: relative; }

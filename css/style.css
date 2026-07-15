@@ -73,6 +73,13 @@ h3 { margin: 18px 0 10px; font-size: 1.14rem; }
 .bio-tags { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-top: 30px; }
 .bio-tile { min-width: 0; margin: 0; padding: 8px; border-radius: 20px; background: rgba(255,253,248,.92); border: 1px solid rgba(123,135,82,.22); box-shadow: 0 16px 34px rgba(49,52,39,.10); overflow: hidden; transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease; will-change: transform; }
 .bio-tile img { display: block; width: 100%; aspect-ratio: 4 / 3; height: auto; object-fit: cover; border-radius: 15px; background: var(--color-sand); transition: transform .28s ease, filter .28s ease; }
+.bio-tile img { cursor: zoom-in; }
+.bio-lightbox-open { overflow: hidden; }
+.bio-lightbox { position: fixed; inset: 0; z-index: 1000; display: flex; align-items: center; justify-content: center; padding: 24px; background: rgba(32, 35, 29, .58); cursor: zoom-out; }
+.bio-lightbox[hidden] { display: none; }
+.bio-lightbox__image { display: block; max-width: 90vw; max-height: 88vh; width: auto; height: auto; object-fit: contain; border-radius: 15px; box-shadow: 0 24px 70px rgba(0, 0, 0, .34); cursor: default; }
+.bio-lightbox__close { position: fixed; top: 18px; right: 18px; width: 44px; height: 44px; border: 0; border-radius: 999px; background: rgba(255, 255, 255, .94); color: var(--color-dark); cursor: pointer; font-size: 32px; line-height: 1; box-shadow: 0 12px 34px rgba(0, 0, 0, .2); }
+.bio-lightbox__close:focus-visible { outline: 3px solid var(--color-sand); outline-offset: 3px; }
 .bio-tile:hover { transform: translateY(-2px) scale(1.015); border-color: rgba(123,135,82,.34); box-shadow: 0 20px 42px rgba(49,52,39,.14); }
 .bio-tile:hover img { transform: scale(1.01); filter: saturate(1.03) contrast(1.02); }
 @media (hover: none), (prefers-reduced-motion: reduce) { .bio-tile, .bio-tile img { transition: none; will-change: auto; } .bio-tile:hover, .bio-tile:hover img { transform: none; filter: none; } }

@@ -123,7 +123,10 @@ const translations = {
     'współpraca sąsiedzka i pierwsza reakcja': 'neighbour cooperation and first response',
     'Uczestnicy mają praktyczny schemat działania, który pomaga uruchomić lokalne wsparcie i ograniczyć chaos w pierwszej fazie kryzysu.': 'Participants have a practical action plan that helps launch local support and reduce chaos in the first phase of a crisis.',
     'Wybór języka': 'Language selection',
-    'language.switcherLabel': 'Language selection'
+    'language.switcherLabel': 'Language selection',
+    'Otwórz powiększenie zdjęcia': 'Open enlarged image',
+    'Zamknij powiększone zdjęcie': 'Close enlarged image',
+    'Powiększone zdjęcie': 'Enlarged image'
   }
 };
 const navToggle = document.querySelector('.nav-toggle');
@@ -234,10 +237,83 @@ function renderBioTiles() {
       image.dataset.i18nAttr = `alt:${tile.altTranslationKey}`;
       image.loading = 'lazy';
       image.decoding = 'async';
+      image.tabIndex = 0;
+      image.setAttribute('role', 'button');
+      image.setAttribute('aria-label', 'Otwórz powiększenie zdjęcia');
 
       card.append(image);
       container.append(card);
     });
+  });
+}
+
+
+function initBioLightbox() {
+  const gallery = document.querySelector('[data-bio-tiles]');
+  if (!gallery) return;
+
+  const lightbox = document.createElement('div');
+  lightbox.className = 'bio-lightbox';
+  lightbox.setAttribute('role', 'dialog');
+  lightbox.setAttribute('aria-modal', 'true');
+  lightbox.setAttribute('aria-label', 'Powiększone zdjęcie');
+  lightbox.hidden = true;
+
+  const closeButton = document.createElement('button');
+  closeButton.className = 'bio-lightbox__close';
+  closeButton.type = 'button';
+  closeButton.setAttribute('aria-label', 'Zamknij powiększone zdjęcie');
+  closeButton.textContent = '×';
+
+  const image = document.createElement('img');
+  image.className = 'bio-lightbox__image';
+  image.alt = '';
+
+  lightbox.append(closeButton, image);
+  document.body.append(lightbox);
+
+  let lastFocusedElement = null;
+
+  function openLightbox(sourceImage) {
+    lastFocusedElement = document.activeElement;
+    image.src = sourceImage.currentSrc || sourceImage.src;
+    image.alt = sourceImage.alt || '';
+    lightbox.hidden = false;
+    document.body.classList.add('bio-lightbox-open');
+    closeButton.focus();
+  }
+
+  function closeLightbox() {
+    lightbox.hidden = true;
+    image.removeAttribute('src');
+    document.body.classList.remove('bio-lightbox-open');
+    lastFocusedElement?.focus?.();
+  }
+
+  gallery.addEventListener('click', (event) => {
+    const sourceImage = event.target.closest('.bio-tile img');
+    if (!sourceImage || !gallery.contains(sourceImage)) return;
+    openLightbox(sourceImage);
+  });
+
+  gallery.addEventListener('keydown', (event) => {
+    if (event.key !== 'Enter' && event.key !== ' ') return;
+    const sourceImage = event.target.closest('.bio-tile img');
+    if (!sourceImage || !gallery.contains(sourceImage)) return;
+    event.preventDefault();
+    openLightbox(sourceImage);
+  });
+
+  lightbox.addEventListener('click', (event) => {
+    if (event.target === lightbox || event.target === closeButton) closeLightbox();
+  });
+
+  image.addEventListener('click', (event) => {
+    event.stopPropagation();
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && !lightbox.hidden) closeLightbox();
   });
 }
 
@@ -336,4 +412,5 @@ function initLanguageSwitcher() {
 }
 
 renderBioTiles();
+initBioLightbox();
 initLanguageSwitcher();

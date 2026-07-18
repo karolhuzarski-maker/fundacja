@@ -57,7 +57,7 @@ const translations = {
     'Mieszkańcy': 'Residents',
     'Dla każdego, kto chce wiedzieć, jak skutecznie pomóc innym.': 'For everyone who wants to know how to help others effectively.',
     'Szkoły': 'Schools',
-    'Edukacja uczniów i nauczycieli w zakresie bezpieczeństwa i pierwszej pomocy.': 'Safety and first aid education for students and teachers.',
+    'Praktyczne przygotowanie uczniów i kadry do bezpiecznego reagowania oraz udzielania pierwszej pomocy.': 'Practical preparation for students and staff to respond safely and provide first aid.',
     'OSP': 'Volunteer fire brigades',
     'Wsparcie dla jednostek OSP w szkoleniach i działaniach na rzecz społeczności.': 'Support for volunteer fire brigades in training and community activities.',
     'Samorządy i instytucje': 'Local governments and institutions',

@@ -46,7 +46,7 @@ const translations = {
     'BSP i termowizja dla gmin i OSP: wsparcie poszukiwań, rozpoznanie terenu, ćwiczenia tabletop, szkolenia i dokumentacja — bez zakupu drona przez gminę.': 'UAV and thermal imaging for municipalities and volunteer fire brigades: search support, terrain reconnaissance, tabletop exercises, training and documentation — without the municipality buying a drone.',
     'Zobacz program': 'View program',
     'Zobacz pakiet dla gmin': 'View the municipal package',
-    'program.medidrop.href': './en/programs/medidrop-72h/',
+    'program.medidrop.href': './en/programs/echodron-sar/',
     'program.gapsm.href': './en/gapsm-72h/',
     'program.gapsm.button': 'View programme',
     'Pakiet dla gmin i OSP': 'Package for municipalities and volunteer fire brigades',

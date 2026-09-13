@@ -12,6 +12,7 @@
   <link rel="icon" type="image/png" href="./favicon.png">
   <link rel="shortcut icon" href="./favicon.png">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/uav-sar.css">
 </head>
 <body>
   <header class="site-header" id="top">
@@ -26,7 +27,18 @@
       <nav class="site-nav" id="site-nav" aria-label="Główna nawigacja">
         <a href="#o-fundacji">O fundacji</a>
         <a href="#programy">Programy</a>
-        <a href="#dzialania">Działania</a>
+        <a class="uav-sar-nav" href="#uav-sar" aria-label="UAV SAR">
+          <svg class="uav-sar-nav__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="5" cy="5" r="2.4"></circle><circle cx="19" cy="5" r="2.4"></circle>
+              <circle cx="5" cy="19" r="2.4"></circle><circle cx="19" cy="19" r="2.4"></circle>
+              <path d="M7 7l3.2 3.2M17 7l-3.2 3.2M7 17l3.2-3.2M17 17l-3.2-3.2"></path>
+              <rect x="9.4" y="9.4" width="5.2" height="5.2" rx="1.2"></rect>
+              <path d="M12 14.6v3.1"></path>
+            </g>
+          </svg>
+          <span>UAV SAR</span>
+        </a>
         <a href="#wspolpraca">Współpraca</a>
         <a href="#kontakt">Kontakt</a>
         <div class="language-switcher" role="group" aria-label="Wybór języka" data-i18n-attr="aria-label:language.switcherLabel">
@@ -59,12 +71,7 @@
     <section class="section mission-section" id="o-fundacji">
       <div class="container">
         <article class="mission-card">
-          <img
-            src="/images/o-fundacji-watermark.png"
-            alt=""
-            aria-hidden="true"
-            class="o-fundacji-watermark"
-          >
+          <img src="/images/o-fundacji-watermark.png" alt="" aria-hidden="true" class="o-fundacji-watermark">
           <div class="mission-aside" aria-hidden="true">
             <div class="mission-icon"><img src="MAIN NEW MIX LOGO.png" alt=""></div>
             <p>Wiedza. Reakcja. Odpowiedzialność.</p>
@@ -119,67 +126,23 @@
       </div>
     </section>
 
-    <section class="section actions-section" id="dzialania">
-      <div class="container actions-grid">
+    <section class="section uav-sar-section" id="uav-sar">
+      <div class="container uav-sar-grid">
         <div>
-          <p class="eyebrow">Praktyka, technologia i gotowość</p>
-          <h2>Działania Fundacji</h2>
-          <p class="section-lead">Łączymy edukację, ćwiczenia terenowe, termowizję i technologie bezzałogowe, aby wspierać mieszkańców, samorządy oraz służby w przygotowaniu i reagowaniu na sytuacje kryzysowe.</p>
+          <p class="uav-sar-kicker" data-uav-copy="kicker">UAV SAR</p>
+          <h2 class="uav-sar-title" data-uav-copy="title">Kiedy liczy się czas, <strong>teren nie powinien być ograniczeniem.</strong></h2>
+          <p class="uav-sar-lead" data-uav-copy="lead">Zaginięcie osoby, rozległy lub trudno dostępny teren, ograniczona widoczność — dron może w krótkim czasie dostarczyć obraz obszaru, którego sprawdzenie z ziemi wymaga znacznie większych sił i czasu.</p>
         </div>
-        <div class="action-list">
-          <article>
-            <div class="action-content">
-              <h3>Szkolenia praktyczne i ćwiczenia kryzysowe</h3>
-              <p>Pierwsza pomoc, kontrola krwotoków, blackout, ewakuacja i reagowanie lokalne.</p>
-              <div class="action-icon" style="min-height: 72px; visibility: hidden;" aria-hidden="true"></div>
-            </div>
-          </article>
-          <article>
-            <div class="action-content">
-              <h3>EchoDron SAR – termowizja i rozpoznanie</h3>
-              <p>Wsparcie poszukiwań, ocena terenu i rozpoznanie sytuacji z powietrza.</p>
-              <div class="action-icon" style="min-height: 72px; visibility: hidden;" aria-hidden="true"></div>
-            </div>
-          </article>
-          <article>
-            <div class="action-content">
-              <h3>MediDrop 72 h – pomoc z powietrza</h3>
-              <p>Dostarczanie leków, sprzętu i środków łączności do miejsc czasowo odciętych.</p>
-              <div class="action-icon" style="min-height: 72px; visibility: hidden;" aria-hidden="true"></div>
-            </div>
-          </article>
-          <article>
-            <div class="action-content">
-              <h3>Lokalne Punkty Kontroli Krwotoku</h3>
-              <p>Sprzęt ratunkowy dostępny lokalnie i szkolenia dla mieszkańców.</p>
-              <div class="action-icon" style="min-height: 72px; visibility: hidden;" aria-hidden="true"></div>
-            </div>
-          </article>
-          <article>
-            <div class="action-content">
-              <h3>Bezpieczna Gmina – audyty i ćwiczenia</h3>
-              <p>Ocena gotowości oraz szkolenia urzędu, OSP, szkół i lokalnych instytucji.</p>
-              <div class="action-icon" style="min-height: 72px; visibility: hidden;" aria-hidden="true"></div>
-            </div>
-          </article>
-          <article>
-            <div class="action-content">
-              <h3>Dron Wsparcia Kryzysowego</h3>
-              <p>Stała gotowość dronowa, termowizyjna i szkoleniowa dla gmin oraz instytucji.</p>
-              <div class="action-icon" style="min-height: 72px; visibility: hidden;" aria-hidden="true"></div>
-            </div>
-          </article>
-        </div>
+        <aside class="uav-sar-panel">
+          <h3 data-uav-copy="panelTitle">Potrzebujesz wsparcia w działaniach poszukiwawczych?</h3>
+          <p data-uav-copy="panelText">Fundacja Odporności Cywilnej rozwija zdolność UAV SAR wykorzystującą drony, termowizję i rozpoznanie z powietrza do wsparcia działań poszukiwawczych i zespołów działających w terenie.</p>
+          <a class="uav-sar-cta" href="#kontakt" data-uav-copy="cta">SKONTAKTUJ SIĘ Z NAMI →</a>
+        </aside>
       </div>
     </section>
 
     <section class="section collaboration-section" id="wspolpraca">
-      <img
-        src="/images/wspolpraca-watermark.png"
-        alt=""
-        aria-hidden="true"
-        class="wspolpraca-watermark"
-      >
+      <img src="/images/wspolpraca-watermark.png" alt="" aria-hidden="true" class="wspolpraca-watermark">
       <div class="container collaboration-card wspolpraca-content">
         <p class="eyebrow">Partnerstwo</p>
         <h2>Współpraca</h2>
@@ -211,11 +174,12 @@
     <div class="container footer-grid">
       <div><img class="footer-logo" src="final%20logo.jpeg" alt="Logo Fundacji Odporności Cywilnej"><h3>Fundacja Odporności Cywilnej</h3><p>Wiedza. Reakcja. Odpowiedzialność.</p></div>
       <div><h3>Kontakt</h3><p><a href="mailto:kontakt@odpornosc-cywilna.org">kontakt@odpornosc-cywilna.org</a><a href="tel:+48512503640">512 503 640</a>ul. Lwowska 2C<br>32-040 Ochojno</p></div>
-      <div><h3>Szybkie linki</h3><a href="#o-fundacji">O fundacji</a><a href="#programy">Programy</a><a href="#dzialania">Działania</a><a href="#wspolpraca">Współpraca</a><a href="#kontakt">Kontakt</a></div>
+      <div><h3>Szybkie linki</h3><a href="#o-fundacji">O fundacji</a><a href="#programy">Programy</a><a class="footer-uav-link" href="#uav-sar">UAV SAR</a><a href="#wspolpraca">Współpraca</a><a href="#kontakt">Kontakt</a></div>
       <div><h3>Bądź na bieżąco</h3><p>Informacje o działaniach Fundacji i programach edukacyjnych.</p></div>
     </div>
     <div class="container footer-bottom"><p>© 2025 Fundacja Odporności Cywilnej. Wszelkie prawa zastrzeżone.</p><div><a href="#">Polityka prywatności</a><a href="#">Regulamin</a></div></div>
   </footer>
   <script src="js/main.js"></script>
+  <script src="js/uav-sar.js"></script>
 </body>
 </html>

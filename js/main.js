@@ -1,5 +1,6 @@
 const translations = {
   en: {
+    'brand.logo.src': '/en-logo-foc-v6.svg',
     "Fundacja Odporności Cywilnej": "Civil Resilience Foundation",
     "Prezes: Karol Huzarski": "President: Karol Huzarski",
     "Pierwsze 10 minut": "The First 10 Minutes",

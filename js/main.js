@@ -1,16 +1,25 @@
 const translations = {
   en: {
-    "Karol Huzarski, prezes Fundacji Odporności Cywilnej, jest ratownikiem medycznym, pilotem UAV oraz instruktorem STOP THE BLEED® i Combat Lifesaver. Doświadczenie zdobywał w Państwowym Ratownictwie Medycznym, w komponencie medycznym wspierającym siły US/NATO w Afganistanie oraz podczas Specjalnej Misji Monitorującej OBWE w Ukrainie.": "Karol Huzarski, President of Fundacja Odporności Cywilnej, is a paramedic, UAV pilot, and STOP THE BLEED® and Combat Lifesaver instructor. His experience includes Poland’s State Emergency Medical Services, a medical component supporting US/NATO forces in Afghanistan, and the OSCE Special Monitoring Mission in Ukraine.",
+    "Fundacja Odporności Cywilnej": "Civil Resilience Foundation",
+    "Prezes: Karol Huzarski": "President: Karol Huzarski",
+    "Pierwsze 10 minut": "The First 10 Minutes",
+    "Lokalne Punkty Kontroli Krwotoku | Fundacja Odporności Cywilnej": "Local Bleeding Control Points | Civil Resilience Foundation",
+    "Odporność cywilna w praktyce | Fundacja Odporności Cywilnej": "Civil Resilience in Practice | Civil Resilience Foundation",
+    "Cywilna reakcja na zagrożenia BSP": "Civilian response to UAV threats",
+    "Program edukacyjny dla mieszkańców, szkół, OSP i jednostek gminnych dotyczący spokojnej, bezpiecznej reakcji na zdarzenia związane z dronami, szczątkami, hukiem, dezinformacją oraz osobami rannymi.": "An educational program for residents, schools, volunteer fire brigades and municipal units on responding calmly and safely to incidents involving drones, debris, loud bangs, disinformation and injured people.",
+    "Program wzmacnia spokojną, cywilną reakcję na zagrożenia BSP: od schronienia i unikania szczątków po zgłoszenie zdarzenia, ograniczanie dezinformacji i bezpieczną pomoc poszkodowanym.": "The program strengthens calm civilian response to UAV threats: from taking shelter and avoiding debris to reporting incidents, limiting disinformation and safely helping injured people.",
+    "Program edukacyjny dla mieszkańców, szkół, OSP i gmin: schronienie, zgłoszenie, szczątki, dezinformacja, bezpieczeństwo i pierwsza pomoc przy zdarzeniach związanych z BSP.": "An educational program for residents, schools, volunteer fire brigades and municipalities: shelter, reporting, debris, disinformation, safety and first aid in UAV-related incidents.",
+    "Karol Huzarski, prezes Fundacji Odporności Cywilnej, jest ratownikiem medycznym, pilotem UAV oraz instruktorem STOP THE BLEED® i Combat Lifesaver. Doświadczenie zdobywał w Państwowym Ratownictwie Medycznym, w komponencie medycznym wspierającym siły US/NATO w Afganistanie oraz podczas Specjalnej Misji Monitorującej OBWE w Ukrainie.": "Karol Huzarski, President of Civil Resilience Foundation, is a paramedic, UAV pilot, and STOP THE BLEED® and Combat Lifesaver instructor. His experience includes Poland’s State Emergency Medical Services, a medical component supporting US/NATO forces in Afghanistan, and the OSCE Special Monitoring Mission in Ukraine.",
     "Fundacja przygotowuje mieszkańców, szkoły, OSP i samorządy do skutecznego reagowania w sytuacjach kryzysowych. Rozwija również UAV SAR — wsparcie poszukiwań i ratownictwa z wykorzystaniem dronów, termowizji i rozpoznania z powietrza.": "The Foundation prepares residents, schools, volunteer fire brigades and local governments to respond effectively to crises. It also develops UAV SAR capabilities — supporting search and rescue through drones, thermal imaging and aerial reconnaissance.",
     "Prowadzi także działalność badawczo-rozwojową (R&D) na rzecz ratownictwa i odporności lokalnych społeczności.": "It also conducts research and development (R&D) to support emergency response and community resilience.",
     "Rozwijamy praktyczne rozwiązania wspierające ratownictwo, poszukiwania i odporność cywilną. Łączymy doświadczenie terenowe z technologiami UAV, termowizją i edukacją, aby odpowiadać na rzeczywiste potrzeby służb i lokalnych społeczności.": "We develop practical solutions for emergency response, search and rescue, and civil resilience. We combine field experience with UAV technology, thermal imaging and education to address the real needs of emergency services and local communities.",
     "Do współpracy przy projektach badawczo-rozwojowych zapraszamy uczelnie, partnerów technologicznych, samorządy i organizacje ratownicze.": "We welcome universities, technology partners, local governments and rescue organisations to collaborate on research and development projects.",
     "Badania i rozwój": "Research & Development",
     "Porozmawiajmy o projekcie": "Discuss a project",
-    'Fundacja Odporności Cywilnej | Edukacja ratunkowa i ochrona ludności': 'Fundacja Odporności Cywilnej | Emergency education and civil protection',
-    'Fundacja Odporności Cywilnej wzmacnia bezpieczeństwo społeczności przez edukację ratunkową, pierwszą reakcję i lokalne systemy wsparcia.': 'Fundacja Odporności Cywilnej strengthens community safety through emergency education, first response and local support systems.',
+    'Fundacja Odporności Cywilnej | Edukacja ratunkowa i ochrona ludności': 'Civil Resilience Foundation | Emergency education and civil protection',
+    'Fundacja Odporności Cywilnej wzmacnia bezpieczeństwo społeczności przez edukację ratunkową, pierwszą reakcję i lokalne systemy wsparcia.': 'Civil Resilience Foundation strengthens community safety through emergency education, first response and local support systems.',
     'Edukacja ratunkowa, ochrona ludności i pierwsza reakcja w sytuacjach zagrożenia.': 'Emergency education, civil protection and first response in crisis situations.',
-    'Logo Fundacji Odporności Cywilnej': 'Fundacja Odporności Cywilnej logo',
+    'Logo Fundacji Odporności Cywilnej': 'Civil Resilience Foundation logo',
     'Otwórz menu': 'Open menu',
     'Główna nawigacja': 'Main navigation',
     'O fundacji': 'About',
@@ -25,11 +34,11 @@ const translations = {
     'Skontaktuj się': 'Contact us',
     'Wiedza. Reakcja. Odpowiedzialność.': 'Knowledge. Response. Responsibility.',
     'Za fundacją stoi praktyka': 'Built on field experience',
-    'Karol Huzarski, Prezes Fundacji Odporności Cywilnej, jest ratownikiem medycznym, instruktorem STOP THE BLEED® oraz instruktorem Combat Lifesaver. Od lat łączy praktykę ratowniczą, medycynę taktyczną i edukację publiczną, koncentrując się na tym, co decyduje o przeżyciu w pierwszych minutach zdarzenia: opanowaniu masywnego krwotoku, pierwszej reakcji, podstawowej segregacji poszkodowanych i bezpiecznym działaniu w sytuacjach kryzysowych.': 'Karol Huzarski, President of Fundacja Odporności Cywilnej, is a paramedic, STOP THE BLEED® Instructor and Combat Lifesaver Instructor. His work combines prehospital emergency care, tactical medicine and public education, with a clear focus on what matters most in the first minutes of an incident: massive bleeding control, first response, basic triage and safe action during emergencies.',
+    'Karol Huzarski, Prezes Fundacji Odporności Cywilnej, jest ratownikiem medycznym, instruktorem STOP THE BLEED® oraz instruktorem Combat Lifesaver. Od lat łączy praktykę ratowniczą, medycynę taktyczną i edukację publiczną, koncentrując się na tym, co decyduje o przeżyciu w pierwszych minutach zdarzenia: opanowaniu masywnego krwotoku, pierwszej reakcji, podstawowej segregacji poszkodowanych i bezpiecznym działaniu w sytuacjach kryzysowych.': 'Karol Huzarski, President of Civil Resilience Foundation, is a paramedic, STOP THE BLEED® Instructor and Combat Lifesaver Instructor. His work combines prehospital emergency care, tactical medicine and public education, with a clear focus on what matters most in the first minutes of an incident: massive bleeding control, first response, basic triage and safe action during emergencies.',
     'Doświadczenie zdobywał w polskim systemie Państwowego Ratownictwa Medycznego oraz w środowisku międzynarodowym — między innymi w Afganistanie, gdzie pracował w komponencie medycznym wspierającym siły US/NATO na Kandahar Airfield, a także podczas Specjalnej Misji Monitorującej OBWE w Ukrainie.': 'He gained experience in Poland’s State Emergency Medical Services and in international operational environments — including Afghanistan, where he worked with a medical component supporting US/NATO forces at Kandahar Airfield, and during the OSCE Special Monitoring Mission in Ukraine.',
     'Jego droga zawodowa obejmuje również kilka lat pracy w międzynarodowym środowisku finansów korporacyjnych, gdzie zajmował się procedurami, kontrolą procesów, dokumentacją, weryfikacją płatności oraz pracą w uporządkowanych strukturach organizacyjnych. To doświadczenie wzmacnia praktyczne podejście Fundacji do przejrzystości, odpowiedzialności, współpracy z instytucjami i realizacji projektów opartych na jasnych zasadach.': 'His professional background also includes several years in an international corporate finance environment, working with procedures, process control, documentation, payment verification and structured operational workflows. This experience strengthens the Foundation’s practical approach to transparency, accountability, institutional cooperation and projects built on clear procedures.',
     'Stworzył inicjatywy edukacyjne H-CORE EDU oraz Stop Krwotokom, rozwijając praktyczne szkolenia dla mieszkańców, instytucji, szkół, organizacji i służb. Jego celem jest budowanie realnej odporności cywilnej — nie przez teorię i hasła, ale przez konkretne umiejętności, proste procedury oraz gotowość do działania wtedy, gdy pomoc zawodowa dopiero jest w drodze.': 'He created the H-CORE EDU and Stop Krwotokom educational initiatives, developing practical training for residents, institutions, schools, organisations and services. His goal is to build real civil resilience — not through slogans or theory, but through concrete skills, simple procedures and readiness to act while professional help is still on the way.',
-    'Fundację Odporności Cywilnej buduje jako platformę nowoczesnej edukacji publicznej, łączącą ratownictwo, bezpieczeństwo, przygotowanie kryzysowe i lokalną odpowiedzialność. Jej misją jest wzmacnianie ludzi, instytucji i społeczności w taki sposób, aby w sytuacji zagrożenia potrafili działać szybko, spokojnie i skutecznie.': 'He is building Fundacja Odporności Cywilnej as a platform for modern public education, connecting emergency response, safety, crisis preparedness and local responsibility. Its mission is to strengthen people, institutions and communities so that in a moment of threat they can act quickly, calmly and effectively.',
+    'Fundację Odporności Cywilnej buduje jako platformę nowoczesnej edukacji publicznej, łączącą ratownictwo, bezpieczeństwo, przygotowanie kryzysowe i lokalną odpowiedzialność. Jej misją jest wzmacnianie ludzi, instytucji i społeczności w taki sposób, aby w sytuacji zagrożenia potrafili działać szybko, spokojnie i skutecznie.': 'He is building Civil Resilience Foundation as a platform for modern public education, connecting emergency response, safety, crisis preparedness and local responsibility. Its mission is to strengthen people, institutions and communities so that in a moment of threat they can act quickly, calmly and effectively.',
     'Doświadczenie i obszary praktyki': 'Experience and areas of practice',
     'Ratownik medyczny': 'Paramedic',
     'Instruktor STOP THE BLEED®': 'STOP THE BLEED® Instructor',
@@ -94,7 +103,7 @@ const translations = {
     'Szybkie linki': 'Quick links',
     'Bądź na bieżąco': 'Stay up to date',
     'Informacje o działaniach Fundacji i programach edukacyjnych.': 'Updates on the Foundation’s activities and educational programs.',
-    '© 2025 Fundacja Odporności Cywilnej. Wszelkie prawa zastrzeżone.': '© 2025 Fundacja Odporności Cywilnej. All rights reserved.',
+    '© 2025 Fundacja Odporności Cywilnej. Wszelkie prawa zastrzeżone.': '© 2025 Civil Resilience Foundation. All rights reserved.',
     'Polityka prywatności': 'Privacy policy',
     'Regulamin': 'Terms',
     'Program edukacyjny': 'Educational program',
@@ -105,7 +114,7 @@ const translations = {
     'Kontakt w sprawie programu': 'Program contact',
     'Zapytaj o program': 'Ask about the program',
     '← Wróć do sekcji Programy': '← Back to Programs',
-    'Pierwsze 10 minut | Fundacja Odporności Cywilnej': 'The First 10 Minutes | Fundacja Odporności Cywilnej',
+    'Pierwsze 10 minut | Fundacja Odporności Cywilnej': 'The First 10 Minutes | Civil Resilience Foundation',
     'Pierwsza reakcja przed przyjazdem służb: bezpieczeństwo, 112, AED, krwotoki i decyzje, które mogą uratować życie.': 'First response before emergency services arrive: safety, 112, AED, bleeding and decisions that can save lives.',
     'Uczestnicy uczą się rozpoznawać zagrożenia, wezwać pomoc, zatrzymać masywny krwotok, zabezpieczyć poszkodowanego i działać spokojnie w pierwszej fazie zdarzenia.': 'Participants learn to recognise hazards, call for help, stop massive bleeding, protect the injured person and act calmly during the first phase of an incident.',
     'Szkoły, firmy, instytucje, organizacje lokalne oraz osoby, które chcą wiedzieć, co zrobić w najważniejszych minutach po wypadku, ataku, katastrofie lub nagłym zagrożeniu.': 'Schools, companies, institutions, local organisations and individuals who want to know what to do in the most important minutes after an accident, attack, disaster or sudden threat.',
@@ -410,7 +419,9 @@ function initLanguageSwitcher() {
   document.querySelectorAll('.language-option[data-lang]').forEach((button) => {
     button.addEventListener('click', () => setLanguage(button.dataset.lang));
   });
-  setLanguage(localStorage.getItem(LANGUAGE_STORAGE_KEY) || 'pl');
+  const pageLanguage = document.documentElement.lang || 'pl';
+  const hasLanguageButtons = document.querySelector('.language-option[data-lang]');
+  setLanguage(hasLanguageButtons ? (localStorage.getItem(LANGUAGE_STORAGE_KEY) || pageLanguage) : pageLanguage);
 }
 
 renderBioTiles();

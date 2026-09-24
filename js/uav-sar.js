@@ -13,7 +13,7 @@
       title: 'When time matters, <strong>terrain should not be the limitation.</strong>',
       lead: 'A missing person, difficult terrain or limited visibility — UAV systems can rapidly provide an aerial picture of areas that would require significantly more time and resources to search from the ground.',
       panelTitle: 'Need support during a search operation?',
-      panelText: 'Fundacja Odporności Cywilnej is developing a UAV SAR capability using drones, thermal imaging and aerial reconnaissance to support search operations and teams working in the field.',
+      panelText: 'Civil Resilience Foundation is developing a UAV SAR capability using drones, thermal imaging and aerial reconnaissance to support search operations and teams working in the field.',
       cta: 'CONTACT US →'
     }
   };
